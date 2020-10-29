@@ -44,6 +44,7 @@ Find the file `index.js` and complete the tasks until your tests are passing.
 Edit the `ReadMe` file with your answers.
 
 1. In your own words, define closure (1-2 sentences).
+Closure is a function that is enclosed but references the data around it.
 2. Study the following code, then answer the questions below.
 
 ```js
@@ -65,9 +66,18 @@ dansRoll();
 ```
 
 a. Where is closure used in this code? How can you tell?
-b. Compare and contrast calling `dansRoll` the first and second time. What is always the same? What could change?
-c. What is the lexical scope of `newRoll`? 
+Closure is used in this scope here: 
 
+return function(){
+    const newRoll = Math.floor(Math.random() * 6);
+    console.log(`${name} rolled a ${newRoll}`)
+  }
+
+  this is because it references data from outside 
+b. Compare and contrast calling `dansRoll` the first and second time. What is always the same? What could change?
+The number will change every time
+c. What is the lexical scope of `newRoll`? 
+1-6
 ### Task 3 - Stretch Goals
 
 After you have completed the requirements, **create** a new file called `stretch.js` and practice more with closures. There are no tests for these problems.
