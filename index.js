@@ -109,8 +109,7 @@ and returns the score at each pont in the game, like so:
 
 Final Score: awayTeam - homeTeam */
 
-function scoreboard(/* CODE HERE */) {
-  /* CODE HERE */
+function scoreboard(inningScore1, callback2, inningNumber) {
+  const inningScore = inningScore1();
 }
-
 
